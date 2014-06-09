@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_exam_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:textSize="@dimen/text_size_6" />
+
+        <com.hjwordsgame.view.ProgressWheel
+            android:id="@+id/pw_exam"
+            android:layout_width="@dimen/height_6_80"
+            android:layout_height="@dimen/height_6_80"
+            android:layout_toLeftOf="@+id/btn_exam_auto" />
+
+        <Button
+            android:id="@+id/btn_exam_auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="自动"
+            android:textSize="@dimen/text_size_6"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tv_exam_word"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="root"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size_15" />
+
+        <ImageView
+            android:id="@+id/iv_exam_word"
+            android:layout_width="@dimen/height_5_80"
+            android:layout_height="@dimen/height_5_80"
+            android:background="@drawable/ico_sound" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_exam"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/ll_exam"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="请拼写单词："
+            android:textSize="@dimen/text_size_15" />
+
+        <EditText
+            android:id="@+id/et_exam"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="根据中文拼写单词" />
+
+        <Button
+            android:id="@+id/btn_exam_sure"
+            android:layout_width="@dimen/width_20_80"
+            android:layout_height="wrap_content"
+            android:text="确定" />
+    </LinearLayout>
+
+</LinearLayout>

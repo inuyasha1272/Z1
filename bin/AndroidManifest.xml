@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hjwordsgame"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.hjwordsgame.activity.HomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hjwordsgame.activity.ChooseWordsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hjwordsgame.activity.StudyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hjwordsgame.activity.ExamActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hjwordsgame.activity.ReviewActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hjwordsgame.activity.ResultActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hjwordsgame.activity.MyFragmentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>
